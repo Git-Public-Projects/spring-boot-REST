@@ -1,4 +1,4 @@
-# spring-boot-REST tutorial by MyDevGeek.com
+# spring-boot-REST tutorial
 
 ##Create a User table
 ```sql
@@ -23,4 +23,4 @@ VALUES
 
 ##Tutorial
 
-Spring Boot REST web service – Part 1 – Spring Data and MySQL - http://mydevgeek.com/spring-boot-rest-web-service-part-1-spring-data-mysql/
+Spring Boot REST web service – Part 1 – Spring Data and MySQL
