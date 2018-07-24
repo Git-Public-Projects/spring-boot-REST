@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     public User getUserById(Long id) {
-        User user = userRepository.findOne(id);
+        User user = userRepository.findById(id).get();
 
         if (user == null) {
             throw new ResourceNotFoundException(id, "user not found");
@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(Long id) {
         User user = getUserById(id);
         if (user != null) {
-            userRepository.delete(id);
+            userRepository.deleteById(id);
         }
     }
 
